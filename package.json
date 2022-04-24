@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "vite-plugin-style-import": "^1.4.1"
+  }
+}

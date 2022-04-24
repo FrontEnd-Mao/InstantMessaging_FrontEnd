@@ -1,0 +1,68 @@
+//头部样式
+	.top-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 88rpx;
+		z-index: 1001;
+		padding-top: var(--status-bar-height);
+		box-sizing: border-box;
+		background: rgba(255,255,255,0.96);
+		border-bottom: 1px solid $uni-bg-color;
+		/**
+		 * 此处有bug
+		 box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+		*/
+		padding-left: $uni-spacing-col-base;
+
+		.top-bar-left {
+			float: left;
+			padding-top: 15rpx;
+			z-index: 1;
+			image {
+				width: 68rpx;
+				height: 68rpx;
+				border-radius: 16rpx;
+			}
+		}
+
+		.top-bar-center {
+			position: absolute;
+			left: 0;
+			right: 0;
+			// bottom: 0;
+			margin: auto;
+			text-align: center;
+			padding-top: 20rpx;
+			z-index: -1;
+			.logo {
+				
+				width: 88rpx;
+				height: 42rpx
+			}
+		}
+
+		.top-bar-right {
+			float: right;
+
+			.search {
+				display: inline-block;
+				width: 88rpx;
+				height: 88rpx;
+
+			}
+
+			.add {
+				display: inline-block;
+				width: 88rpx;
+				height: 88rpx;
+			}
+
+			image {
+				width: 52rpx;
+				height: 52rpx;
+				padding: 18rpx 0 0 18rpx;
+			}
+		}
+	}

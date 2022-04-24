@@ -1,0 +1,189 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/signin/signin",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/signup/signup",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/userhome/userhome",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/userdetials/userdetials",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+
+		}
+
+		, {
+			"path": "pages/chatroom/chatroom",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#FE5786"
+			}
+
+		}, {
+			"path": "components/emoji/emoji",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/buildgroup/buildgroup",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/grouphome/grouphome",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/test/test",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/login_one/login_one",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/pwdlogin/pwdlogin",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/emaillogin/emaillogin",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/register/register",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/josbusiness/josbusiness",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/josbusiness/createenterprise",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/josbusiness/joinenterprise",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/emaillogin/verificationcode",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/maillist/maillist",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/messagenotification/messagenotification",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/workbench/workbench",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}
+	    ,{
+            "path" : "pages/process/process",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"tabBar": {
+		"color": "#8B8B8B", // 表示tabBar item项中文字默认的颜色
+		"selectedColor": "#F63515", // 表示tabBar item项中文字选中的颜色
+		"borderStyle": "black", // 表示tabBar 上边框的颜色，目前只支持 black/white
+		"backgroundColor": "#ffffff", // 表示 tabBar 的背景颜色
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/index/chat.png",
+				"text": "消息"
+			}, {
+				"pagePath": "pages/maillist/maillist",
+				"iconPath": "static/images/index/contacts.png",
+				"text": "通讯录"
+			},
+			{
+				"pagePath": "pages/workbench/workbench",
+				"iconPath": "static/images/index/workbench.png",
+				"text": "工作台"
+			}
+		]
+	}
+}
